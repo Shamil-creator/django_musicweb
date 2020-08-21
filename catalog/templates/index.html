@@ -1,0 +1,18 @@
+{% extends "base_generetic.html" %}
+
+{% block content %}
+<h1>Music web</h1>
+
+  <p>Welcome to <em>Music web</em>, a very basic site</p>
+
+<h2>Dynamic content</h2>
+
+  <p>The musicweb has the following record counts:</p>
+  <ul>
+    <li><strong>Music:</strong> {{ num_musics }}</li>
+    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base_generetic.html" %}
+
+{% block content %}
+<h1>Music list</h1>
+	{% if music_list %}
+	<ul>
+		{% for music in music_list %}
+			<li>
+				<a href="{{music.get_absolute}}">{{music.title}}</a> ({music.author})
+			</li>
+		{% endfor %}
+	</ul>
+  	{% else %}
+  	<p>net music</p>
+  	{% endif %}
+
+	
+{% endblock %}
